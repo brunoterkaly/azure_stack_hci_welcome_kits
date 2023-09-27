@@ -1,6 +1,6 @@
-# Azure Stack HCI Resource Hub 🌐
+# Azure Stack HCI Welcome Kit 🌐
 
-Greetings, Azure Stack HCI aficionados! Embarking on the setup, development, or enhancement of your on-site cluster? You've navigated to the **perfect hub**. Recognizing the intricacies of setting up a dependable and agile infrastructure, we've collated a treasure trove of resources tailored for Azure Stack HCI, spotlighting areas like AKS (Azure Kubernetes Service), AVD (Azure Virtual Desktop), and pivotal Data Services.
+Greetings, Azure Stack HCI aficionados! Embarking on the setup, development, or enhancement of your on-site cluster? You've navigated to the **perfect repo**. Recognizing the intricacies of setting up a dependable and agile infrastructure, we've collated a treasure trove of resources tailored for Azure Stack HCI, spotlighting areas like AKS (Azure Kubernetes Service), AVD (Azure Virtual Desktop), and pivotal Data Services.
 
 ## 📘 What Awaits Inside?
 
