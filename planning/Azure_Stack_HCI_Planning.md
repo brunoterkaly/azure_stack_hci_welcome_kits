@@ -1,6 +1,13 @@
 [catalog]:https://azurestackhcisolutions.azure.microsoft.com/#/catalog
 [switchrequirements]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#network-switch-requirements
 [requiredrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#required-firewall-urls
+[recommendedrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#required-firewall-urls
+[additionalrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#firewall-requirements-for-additional-azure-services
+[internalrules]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#firewall-requirements-for-internal-rules-and-ports
+[azurerequirements]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/system-requirements?tabs=azure-public#azure-requirements
+[validatedswitched]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#network-switches-for-azure-stack-hci
+[enviromentchecker]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/use-environment-checker?tabs=connectivity
+
 
 # Welcome Kit -- Azure Stack HCI -- Planning - Draft
 
@@ -49,9 +56,7 @@ for management, storage or compute, or indeed for multiple of these
 roles then they need to support certain [industry standards][switchrequirements].
 
 Additionally, certain switch vendors have worked with Microsoft to
-validate these switches for each of these roles, the list of these is in
-here
-<https://learn.microsoft.com/en-us/azure-stack/hci/concepts/physical-network-requirements?tabs=overview%2C22H2reqs#network-switches-for-azure-stack-hci>
+[validated their switches][validatedswitched] for each of these roles
 
 Despite this list being available you are free to use any switch as long
 as it meets the requirements for the relevant role (e.g. for a switch
@@ -82,11 +87,7 @@ Domain Controllers reachable from the nodes when they boot.
 
 Azure Stack HCI required to be registered with an Azure subscription and
 then synchronize with Azure at a minimum of every 28 days to allow full
-cluster functionality. The registration of the cluster is not currently
-available in all regions, with the currently supported regions long with
-the permissions required to register the cluster are listed in the
-following document
-<https://learn.microsoft.com/en-us/azure-stack/hci/concepts/system-requirements?tabs=azure-public#azure-requirements>
+cluster functionality. The [registration requirements][azurerequirements] are only certain regions are supported, these regions only hold "metadata" about your cluster and no data from the service running on Azure Stack HCI is stored in this region.
 
 ### Firewall Requirements
 
@@ -98,22 +99,18 @@ Management, etc
 
 -   [Required Rules][requiredrules]
 
--   Recommended Rules -
-    <https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#required-firewall-urls>
+-   [Recommended Rules][recommendedrules]
 
--   Additional Services -
-    <https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#firewall-requirements-for-additional-azure-services>
+-   [Additional Services][additionalrules]
 
 In addition to these firewall rules for the outbound internet access
-there are rules required for internal traffic flows, such as between
-nodes and with management machines. The following document lists out
-these requirements
-<https://learn.microsoft.com/en-us/azure-stack/hci/concepts/firewall-requirements#firewall-requirements-for-internal-rules-and-ports>
+there are [rules required for internal traffic flows][internalrules], such as between
+nodes and with management machines, DC's ectc. 
 
 ## Environment Validation
 
 Once the all of the above requirements are met then they can be
-validated using the Environment Checker can then be used to validate the
+validated using the [Environment Checker][enviromentchecker] can then be used to validate the
 following:
 
 -   **Connectivity validator**. Checks whether each server in the
@@ -136,10 +133,6 @@ following:
 
 -   **Arc integration validator**. Checks if the Azure Stack HCI cluster
     meets all the prerequisites for successful Arc onboarding.
-
-More details around the Environment Checker can be found in the
-following document
-<https://learn.microsoft.com/en-us/azure-stack/hci/manage/use-environment-checker?tabs=connectivity>
 
 
 ## SDN
