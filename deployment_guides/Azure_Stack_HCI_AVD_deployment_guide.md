@@ -11,13 +11,13 @@ Most important: You need...
 - have an Active Directory sync'ed with your Microsoft Entra ID (formerly known as Azure Active Directory) 
 - a valid Azure subscription with owner privileges.
   
-## Currently There Are 2 Options Of Deploying AVD On HCI Possible: 
+## Currently There Are 2 Options Of Deploying AVD On HCI: 
 Both have pros and cons and might (will) change in the future. 
 1. **Option 1**: Will provide you automation via the Azure Portal (Azure Arc). I.e. you can create AVD desktop VMs hosted on your Azure Stack HCI using the portal wizard or an ARM template. For this to work you need to enable *Azure Arc VM management* by installing a feature called *Azure Resource Bridge*. This requires time, planning and maintenance. The idea will last but the process of installation will change when HCI 23H2 is released.  
-***Do this** when you want to learn how the final experience could look like, love Kubernetes, require automation (e.g. ARM) and are ready to redo.*
+***Do this** when you have time, want to learn how the final experience could look like, love Kubernetes, require automation (e.g. ARM) and are ready to redo.*
 
 1. **Option 2**: The Manual Process will get you fast to have an AVD desktop hosted on your HCI. You will learn what it takes and have most freedom of choice / control. Creating a lot of AVD desktops can be teadious with this approach although a lot of steps can (you) be automated with scripting.  
-***Do this** when you need to be fast - want to avoid friction and focus on AVD on HCI.*
+***Do this** when you need to be fast - want to avoid friction (e.g. due to FWalls or proxies) and focus on AVD on HCI.*
 
 ## Option 1: For Automated Deployment Of AVD On HCI Via Azure Portal (Azure Arc) Using Azure Arc VM management.
 ### 1st: You need to enlighten your Azure Portal -> Azure Arc for AVD.  
@@ -32,7 +32,7 @@ Watch [Installing ...Azure Arc Resource Bridge on AzStack HCI using PowerShell (
 
 ### 2nd: You follow the steps in [Configure Azure Virtual Desktop for Azure Stack HCI via automation](https://learn.microsoft.com/en-us/azure/virtual-desktop/azure-stack-hci#configure-azure-virtual-desktop-for-azure-stack-hci-via-automation)
 
-By the end of this section you should have a set of AVD desktops hosted on your Azure Stack HCI which should be part of an AVD Hostpool:  
+By the end of this section you should have a set of AVD desktops hosted on your Azure Stack HCI which should be part of an AVD Hostpool e.g.:  
 ![AVD desktops on HCI HostPool](hostpool.png)  
 The only thing missing is to [Create an application group, a workspace, and assign users in Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/virtual-desktop/create-application-group-workspace?tabs=portal) and finally [Connect to your desktops and applications](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-windows?tabs=subscribe#connect-to-your-desktops-and-applications).
 
