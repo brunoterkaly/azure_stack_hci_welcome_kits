@@ -1,4 +1,4 @@
-# Azure Stack HCI Welcome Kit 🌐
+# Azure Hybrid Welcome Kit 🌐
 
 Greetings, Azure Stack HCI aficionados! Embarking on the setup, development, or enhancement of your on-site cluster? You've navigated to the **perfect repo**. Recognizing the intricacies of setting up a dependable and agile infrastructure, we've collated a treasure trove of resources tailored for Azure Stack HCI, spotlighting areas like AKS (Azure Kubernetes Service), AVD (Azure Virtual Desktop), and pivotal Data Services.
 
@@ -6,7 +6,7 @@ Greetings, Azure Stack HCI aficionados! Embarking on the setup, development, or 
 
 Azure Stack HCI stands as a formidable platform, flexing its muscles in hyper-converged infrastructure capabilities. But, unlocking its myriad features demands insight, readiness, and a commitment to evolve. Here's a snapshot of what you'll discover:
 
-- **Azure Stack HCI – AKS Fundamentals FAQ**: See this [link](./faqs/Azure_Stack_HCI_AKS_Fundamentals_FAQ.md).
+- **Azure AKS Hybrid Fundamentals FAQ**: See this [link](./faqs/Azure_Stack_HCI_AKS_Fundamentals_FAQ.md).
   - What are the differences between Kubernetes and AKS?
   - What are the differences between AKS and Azure Stack HCI AKS?
   - What are capabilities that Azure Stack HCI aks does not provide compared with AKS itself?
@@ -22,7 +22,7 @@ Azure Stack HCI stands as a formidable platform, flexing its muscles in hyper-co
   - What is the difference between Resource Bridge and Azure Arc in the context of managing resources that are deployed on-premises?
   - What are the methods and interfaces available for managing resources in both Resource Bridge and Azure Arc, and how do they differ?
   - Can Resource Bridge manage other types of resources besides VMs?
-- **AVD Deployment Guides**: See this [link](./deployment_guides/Azure_Stack_HCI_AVD_deployment_guide.md)
+- **AVD Hybrid Deployment Guides**: See this [link](./deployment_guides/Azure_Stack_HCI_AVD_deployment_guide.md)
   - Get step-by-step instructions on how to deploy and configure Azure Virtual Desktop on Azure Stack HCI, ensuring a seamless and optimized user experience.
 - **Data Services Integration**: See this [link](./integrations/Azure_Stack_HCI_DataServices_integration.md)
   - Dive into methodologies on integrating crucial data services with Azure Stack HCI. Learn how to handle, process, and store data more efficiently.  
