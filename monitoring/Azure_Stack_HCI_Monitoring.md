@@ -37,7 +37,10 @@
 [healthservicefaults]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/health-service-faults
 [healthserviceactions]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/health-service-actions
 [healthservicesettings]:https://learn.microsoft.com/en-us/azure-stack/hci/manage/health-service-settings
-
+[storagejobsoverview]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/understand-storage-resync#about-storage-resync
+[storagejobsmonitor]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/understand-storage-resync#how-to-monitor-storage-resync
+[getstoragejob]:https://learn.microsoft.com/en-us/azure-stack/hci/concepts/understand-storage-resync#how-to-monitor-storage-resync-in-windows-server-2016
+[getvirtaldisk]:https://learn.microsoft.com/en-us/powershell/module/storage/get-virtualdisk?view=windowsserver2022-ps
 
 
 # Welcome Kit - Azure Stack HCI - Monitoring - Draft
@@ -166,3 +169,9 @@ There are a number of faults which will self remediate, such as failing disks an
 ### Health Service Settings
 
 It is possible to [customize some of these settings][healthservicesettings] such as actions when new disks are added, and also thresholds for some of the alerts.
+
+## Virtual Disk Storage Jobs
+
+When any changes are made to the physical storage, be it a disk failing or being replaced or a node being in maintenance node for a period, [the volumes need to rebuild][storagejobsoverview] to ensure that the copies of the data which is written to the disks affect is updated.  This can [monitored][storagejobsmonitor] and these need to be complete before performing any additional maintenance work.  They can also be seen using [get-storagejob][getstoragejob] and this will show any optimization jobs which periodically run to ensure that storage is data is optimally located, like when adding additional disks or nodes to the storage pool.
+
+Additionally, the status if the virtual disks can be viewed using [get-virtualdisk][getvirtaldisk].
