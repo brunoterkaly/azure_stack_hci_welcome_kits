@@ -47,7 +47,7 @@ Some example solutions we've used with customers are:
 - Veem
 - Rubrix
 - Commvault
-
+- Carbonite
 ## Offline Migration Options
 
 The "offline" type migration to move to Azure Stack HCI follow a couple approaches:
