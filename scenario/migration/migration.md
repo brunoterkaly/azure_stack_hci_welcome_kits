@@ -44,7 +44,7 @@ Third-party solutions will vary in functionality and requirements, but are typli
 
 Some example solutions customers have used are:
 
-- Veem
+- Veeam
 - Rubrix
 - Commvault
 - Carbonite
