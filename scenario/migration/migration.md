@@ -42,7 +42,7 @@ Azure Migrate considerations:
 
 Third-party solutions will vary in functionality and requirements, but are typlically backup solutions. These can be especially attractive if you already have a compatible solution deployed and licensed in your environment.
 
-Some example solutions we've used with customers are:
+Some example solutions customers have used are:
 
 - Veem
 - Rubrix
