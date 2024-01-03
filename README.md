@@ -1,30 +1,28 @@
 # Azure Hybrid Welcome Kit 🌐
 
-Greetings, Azure Stack HCI aficionados! Embarking on the setup, development, or enhancement of your on-site cluster? You've navigated to the **perfect repo**. Recognizing the intricacies of setting up a dependable and agile infrastructure, we've collated a treasure trove of resources tailored for Azure Stack HCI, spotlighting areas like AKS (Azure Kubernetes Service), AVD (Azure Virtual Desktop), and pivotal Data Services.
+Welcome to the ultimate guide for Azure Stack HCI enthusiasts! Whether you are embarking on setting up a brand new cluster, developing an existing one, or looking to enhance your on-premises infrastructure, you have arrived at the right place. Understanding the complexity and the need for a reliable, flexible infrastructure, we have curated an extensive collection of resources specifically designed for Azure Stack HCI. 
 
-## 📘 What Awaits Inside?
+- **Infrastructure Setup and Integration:**
+  - **Hardware Sizing/Setup & Integration:** Optimal configuration and deployment of hardware resources for Azure Stack HCI, ensuring high-performance computing and operational efficiency ([Hardware Sizing Guide](https://aka.ms/FTAWelcomeKit/Hybrid/Sizing)).
+  - **Networking:** Strategic implementation of networking solutions to facilitate robust data communication and connectivity within Azure Stack HCI environments ([Networking Best Practices](https://aka.ms/FTAWelcomeKit/Hybrid/Networking)).
+  - **Storage:** Deployment of advanced storage solutions, tailored to manage data effectively in Azure Stack HCI, enhancing data availability and integrity ([Storage Configuration](https://aka.ms/FTAWelcomeKit/Hybrid/Storage)).
+  - **Cluster Creation and Registration:** Systematic establishment and registration of HCI clusters, focusing on scalability, manageability, and seamless integration ([Cluster Deployment Guidelines](https://aka.ms/FTAWelcomeKit/Hybrid/ClusterDeployment)).
 
-Azure Stack HCI stands as a formidable platform, flexing its muscles in hyper-converged infrastructure capabilities. But, unlocking its myriad features demands insight, readiness, and a commitment to evolve. Here's a snapshot of what you'll discover:
+- **Services and Applications:**
+  - **SQL MI:** Deployment of SQL Managed Instances in Azure, providing sophisticated database management capabilities and optimizations within Azure Stack HCI frameworks ([SQL MI Integration](https://aka.ms/FTAWelcomeKit/Hybrid/SQLMI)).
+  - **App Services:** Efficient management and deployment of web applications, leveraging Azure Stack HCI's capabilities for enhanced application performance and reliability ([App Services Deployment](https://aka.ms/FTAWelcomeKit/Hybrid/Appservices)).
+  - **AVD on HCI:** Integration of Azure Virtual Desktop within HCI, offering secure and scalable virtual desktop infrastructure solutions ([AVD on HCI Implementation](https://aka.ms/FTAWelcomeKit/Hybrid/AVDonHCI)).
+  - **Arc Data Services:** Extension of Azure's data services to hybrid environments, facilitating seamless data operations across cloud and on-premises infrastructures ([Arc Data Services Deployment](https://aka.ms/FTAWelcomeKit/Hybrid/ArcData)).
 
-- **Azure AKS Hybrid Fundamentals FAQ**: See this [link](./faqs/Azure_Stack_HCI_AKS_Fundamentals_FAQ.md).
-  - What are the differences between Kubernetes and AKS?
-  - What are the differences between AKS and Azure Stack HCI AKS?
-  - What are capabilities that Azure Stack HCI aks does not provide compared with AKS itself?
-  - Can you explain the relationship between Azure Stack HCI AKS, Resource Bridge, and Azure Arc?
-  - Is it possible to use the Azure Portal to manage an Azure Stack HCI AKS cluster that is connected to Azure using Resource Bridge?
-  - Can I use the same tools and APIs to manage both Azure Stack HCI AKS and AKS?
-  - What are the networking requirements for Azure Stack HCI AKS compared to AKS?
-  - How does Resource Bridge affect the management and deployment of AKS clusters on Azure Stack HCI?
-  - What are Resource Bridge permissions?
-  - How does Resource Bridge relate to AKS (Azure Kubernetes Service)?
-  - What are the steps to set up Resource Bridge on an AKS cluster?
-  - What's the benefit of deploying AKS with Resource Bridge?
-  - What is the difference between Resource Bridge and Azure Arc in the context of managing resources that are deployed on-premises?
-  - What are the methods and interfaces available for managing resources in both Resource Bridge and Azure Arc, and how do they differ?
-  - Can Resource Bridge manage other types of resources besides VMs?
-- **AVD Hybrid Deployment Guides**: See this [link](./deployment_guides/Azure_Stack_HCI_AVD_deployment_guide.md)
-  - Get step-by-step instructions on how to deploy and configure Azure Virtual Desktop on Azure Stack HCI, ensuring a seamless and optimized user experience.
-- **Data Services Integration**: See this [link](./integrations/Azure_Stack_HCI_DataServices_integration.md)
-  - Dive into methodologies on integrating crucial data services with Azure Stack HCI. Learn how to handle, process, and store data more efficiently.  
-  
-No matter where you are on your Azure Stack HCI adventure, this hub beckons you to plunge right in. Let's shape, refine, and transform our infrastructures in tandem!
+- **Hybrid and Cloud Integration:**
+  - **AKS Hybrid:** Implementation of Azure Kubernetes Service in hybrid environments, enabling efficient management of containerized applications across diverse infrastructures ([AKS Hybrid Configuration](https://aka.ms/FTAWelcomeKit/Hybrid/AKS)).
+  - **SDN:** Deployment of Software-Defined Networking to enhance network agility, security, and performance in Azure Stack HCI ([SDN Implementation Strategies](https://aka.ms/FTAWelcomeKit/Hybrid/SDN)).
+  - **Hybrid Security:** Establishment of robust security frameworks, ensuring comprehensive protection of data and applications in hybrid cloud and on-premises environments ([Hybrid Security Protocols](https://aka.ms/FTAWelcomeKit/Hybrid/Security)).
+
+- **Management and Migration:**
+  - **Migrations:** Strategic planning and execution of workload migrations to Azure Stack HCI, ensuring minimal disruption and optimal resource utilization ([Migration Strategies](https://aka.ms/FTAWelcomeKit/Hybrid/Migrations)).
+  - **Monitoring:** Implementation of comprehensive monitoring solutions for Azure Stack HCI, enabling real-time oversight and proactive management of system health ([Monitoring Solutions](https://aka.ms/FTAWelcomeKit/Hybrid/Monitoring)).
+  - **Management:** Advanced management practices for Azure Stack HCI, focusing on operational efficiency, resource optimization, and continuous system improvement ([Management Best Practices](https://aka.ms/FTAWelcomeKit/Hybrid/Management)).
+
+- **Other Services:**
+  - **Additional Services:** Exploration of further services and capabilities within the Azure Stack HCI ecosystem, addressing unique organizational needs and objectives ([Explore Additional Services](https://aka.ms/FTAWelcomeKit/Hybrid)).
